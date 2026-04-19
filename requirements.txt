@@ -12,3 +12,4 @@ neo4j
 python-dotenv
 pymupdf4llm
 requests
+torchvision
