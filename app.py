@@ -7,8 +7,8 @@ from rag_pipeline import RAGPipeline # Importação da classe RAGPipeline (lógi
 from graph_db import Neo4jClient # Importação do cliente para interação com o banco de dados Neo4j, onde o conhecimento extraído é armazenado como triplas.
 
 # CONFIGURAÇÃO DA INTERFACE 
-st.set_page_config(page_title="Graph RAG App", layout="wide") # Define o título da página e a largura do layout.
-st.title("GraphRAG com Graphdatabase Neo4j") # Título principal da aplicação.
+st.set_page_config(page_title="Infera", layout="wide") # Define o título da página e a largura do layout.
+st.title("Infera APP Project") # Título principal da aplicação.
 
 # Inicializa as variáveis de sessão
 if 'vectorstore' not in st.session_state: # Importante para garantir que o vectorstore seja criado apenas uma vez por upload de PDF.
