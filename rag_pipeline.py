@@ -40,8 +40,8 @@ class RAGPipeline:
         # Lê o PDF inteiro e converte TUDO (incluindo tabelas) para texto Markdown
         texto_markdown = pymupdf4llm.to_markdown(file_path)
         
-        # Divide o texto Markdown, em pedaços de até 2000 caracteres com sobreposição máxima de 300 para manter o contexto.
-        splitter = MarkdownTextSplitter(chunk_size=2000, chunk_overlap=300)
+        # Divide o texto Markdown, em pedaços de até 2000 caracteres com sobreposição máxima de 150 para manter o contexto.
+        splitter = MarkdownTextSplitter(chunk_size=2000, chunk_overlap=150)
         textos_divididos = splitter.split_text(texto_markdown)
         
         docs = [Document(page_content=t) for t in textos_divididos]
